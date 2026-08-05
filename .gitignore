@@ -1,0 +1,11 @@
+# Configuration
+wp-config.php
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
