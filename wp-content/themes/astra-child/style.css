@@ -1,0 +1,16 @@
+/*
+Theme Name: Astra Child
+Description: Astra Child Theme
+Author: Richa
+Author URI: http://example.com
+Template: astra
+Version: 1.0.0
+*/
+/* Add your custom styles here */
+
+div#n2-ss-3 .nextend-arrow{
+    margin-bottom: 150px !important;
+    margin-right: -122px !important;
+    background-color: #CEDD55;
+    padding: 10px 15px;
+}
