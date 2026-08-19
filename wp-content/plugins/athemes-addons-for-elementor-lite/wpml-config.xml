@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+<wpml-config>
+    <elementor-widgets>
+        <widget name="athemes-addons-dual-heading">
+            <conditions>
+                <condition key="widgetType">athemes-addons-dual-heading</condition>
+            </conditions>
+            <fields>
+                <field type="Dual Heading: First Part" editor_type="LINE">first_text</field>
+                <field type="Dual Heading: Second Part" editor_type="LINE">second_text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-before-after-image">
+            <conditions>
+                <condition key="widgetType">athemes-addons-before-after-image</condition>
+            </conditions>
+            <fields>
+                <field type="Before/After Image: Before Label" editor_type="LINE">image_before_label</field>
+                <field type="Before/After Image: After Label" editor_type="LINE">image_after_label</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-news-ticker">
+            <conditions>
+                <condition key="widgetType">athemes-addons-news-ticker</condition>
+            </conditions>
+            <fields>
+                <field type="News Ticker: Title" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-video-popup">
+            <conditions>
+                <condition key="widgetType">athemes-addons-video-popup</condition>
+            </conditions>
+            <fields>
+                <field type="Video Popup: Text" editor_type="LINE">text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-progress-bar">
+            <conditions>
+                <condition key="widgetType">athemes-addons-progress-bar</condition>
+            </conditions>
+            <fields>
+                <field type="Progress Bar: Title" editor_type="LINE">title</field>
+                <field type="Progress Bar: Inner Text" editor_type="LINE">inner_text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-table">
+            <conditions>
+                <condition key="widgetType">athemes-addons-table</condition>
+            </conditions>
+            <fields>
+                <field>table_data</field>
+            </fields>
+            <fields-in-item items_of="table_header">
+                <field type="Table: Header Name" editor_type="LINE">header_name</field>
+            </fields-in-item>
+            <fields-in-item items_of="table_content">
+                <field type="Table: Cell Text" editor_type="LINE">cell_text</field>
+                <field type="Table: Cell WYSIWYG" editor_type="VISUAL">cell_wysiwyg</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-logo-carousel">
+            <conditions>
+                <condition key="widgetType">athemes-addons-logo-carousel</condition>
+            </conditions>
+            <fields>
+                <field>slides</field>
+            </fields>
+            <fields-in-item items_of="slides">
+                <field type="Logo Carousel: Title" editor_type="LINE">title</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-advanced-social">
+            <conditions>
+                <condition key="widgetType">athemes-addons-advanced-social</condition>
+            </conditions>
+            <fields>
+                <field>social_icon_list</field>
+            </fields>
+            <fields-in-item items_of="social_icon_list">
+                <field type="Advanced Social: Label" editor_type="LINE">social_label</field>
+                <field type="Advanced Social: Tooltip Text" editor_type="LINE">social_tooltip_text</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-business-hours">
+            <conditions>
+                <condition key="widgetType">athemes-addons-business-hours</condition>
+            </conditions>
+            <fields>
+                <field>business_hours</field>
+            </fields>
+            <fields-in-item items_of="business_hours">
+                <field type="Business Hours: Day" editor_type="LINE">day</field>
+                <field type="Business Hours: Hours" editor_type="LINE">hours</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-testimonials">
+            <conditions>
+                <condition key="widgetType">athemes-addons-testimonials</condition>
+            </conditions>
+            <fields>
+                <field>slides</field>
+            </fields>
+            <fields-in-item items_of="slides">
+                <field type="Testimonials: Title" editor_type="LINE">title</field>
+                <field type="Testimonials: Name" editor_type="LINE">name</field>
+                <field type="Testimonials: Position" editor_type="LINE">position</field>
+                <field type="Testimonials: Content" editor_type="VISUAL">content</field>
+                <field type="Testimonials: Review Date" editor_type="LINE">review_date</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-team-member">
+            <conditions>
+                <condition key="widgetType">athemes-addons-team-member</condition>
+            </conditions>
+            <fields>
+                <field type="Team Member: Name" editor_type="LINE">name</field>
+                <field type="Team Member: Position" editor_type="LINE">position</field>
+                <field type="Team Member: Short Bio" editor_type="VISUAL">short_bio</field>
+                <field>social</field>
+            </fields>
+            <fields-in-item items_of="social">
+                <field type="Team Member: Social Link" editor_type="URL">link</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-pricing-table">
+            <conditions>
+                <condition key="widgetType">athemes-addons-pricing-table</condition>
+            </conditions>
+            <fields>
+                <field type="Pricing Table: Title" editor_type="LINE">header_title</field>
+                <field type="Pricing Table: Subtitle" editor_type="LINE">header_subtitle</field>
+                <field type="Pricing Table: Currency" editor_type="LINE">price_currency</field>
+                <field type="Pricing Table: Price" editor_type="LINE">price_amount</field>
+                <field type="Pricing Table: Period" editor_type="LINE">price_period</field>
+                <field type="Pricing Table: Description" editor_type="LINE">price_description</field>
+                <field type="Pricing Table: Ribbon Text" editor_type="LINE">ribbon_text</field>
+                <field type="Pricing Table: Button Text" editor_type="LINE">text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-call-to-action">
+            <conditions>
+                <condition key="widgetType">athemes-addons-call-to-action</condition>
+            </conditions>
+            <fields>
+                <field type="Call to Action: Before Title" editor_type="LINE">before_title</field>
+                <field type="Call to Action: Title" editor_type="VISUAL">title</field>
+                <field type="Call to Action: Content" editor_type="VISUAL">content</field>
+                <field type="Call to Action: Button Text" editor_type="LINE">text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-flip-box">
+            <conditions>
+                <condition key="widgetType">athemes-addons-flip-box</condition>
+            </conditions>
+            <fields>
+                <field type="Flip Box: Front Title" editor_type="LINE">front_title</field>
+                <field type="Flip Box: Front Description" editor_type="VISUAL">front_description</field>
+                <field type="Flip Box: Back Title" editor_type="LINE">back_title</field>
+                <field type="Flip Box: Back Description" editor_type="VISUAL">back_description</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-countdown">
+            <conditions>
+                <condition key="widgetType">athemes-addons-countdown</condition>
+            </conditions>
+            <fields>
+                <field type="Countdown: Days Label (Singular)" editor_type="LINE">label_days_singular</field>
+                <field type="Countdown: Hours Label (Singular)" editor_type="LINE">label_hours_singular</field>
+                <field type="Countdown: Minutes Label (Singular)" editor_type="LINE">label_minutes_singular</field>
+                <field type="Countdown: Seconds Label (Singular)" editor_type="LINE">label_seconds_singular</field>
+                <field type="Countdown: Days Label (Plural)" editor_type="LINE">label_days_plural</field>
+                <field type="Countdown: Hours Label (Plural)" editor_type="LINE">label_hours_plural</field>
+                <field type="Countdown: Minutes Label (Plural)" editor_type="LINE">label_minutes_plural</field>
+                <field type="Countdown: Seconds Label (Plural)" editor_type="LINE">label_seconds_plural</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-image-accordion">
+            <conditions>
+                <condition key="widgetType">athemes-addons-image-accordion</condition>
+            </conditions>
+            <fields>
+                <field>image_accordion</field>
+            </fields>
+            <fields-in-item items_of="image_accordion">
+                <field type="Image Accordion: Title" editor_type="LINE">title</field>
+                <field type="Image Accordion: Description" editor_type="VISUAL">text</field>
+                <field type="Image Accordion: Button Text" editor_type="LINE">button_text</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-gallery">
+            <conditions>
+                <condition key="widgetType">athemes-addons-gallery</condition>
+            </conditions>
+            <fields>
+                <field type="Gallery: Show All Text" editor_type="LINE">show_all_text</field>
+                <field>portfolio_list</field>
+            </fields>
+            <fields-in-item items_of="portfolio_list">
+                <field type="Gallery: Title" editor_type="LINE">title</field>
+                <field type="Gallery: Content" editor_type="VISUAL">content</field>
+                <field type="Gallery: Filter Term" editor_type="AREA">term</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-page-list">
+            <conditions>
+                <condition key="widgetType">athemes-addons-page-list</condition>
+            </conditions>
+            <fields>
+                <field>items</field>
+            </fields>
+            <fields-in-item items_of="items">
+                <field type="Page List: Title" editor_type="LINE">item_title</field>
+                <field type="Page List: Subtitle" editor_type="LINE">item_subtitle</field>
+                <field type="Page List: Badge Text" editor_type="LINE">badge_text</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-slider">
+            <conditions>
+                <condition key="widgetType">athemes-addons-slider</condition>
+            </conditions>
+            <fields>
+                <field>slides_controls</field>
+            </fields>
+            <fields-in-item items_of="slides_controls">
+                <field type="Slider: Title" editor_type="LINE">slide_heading</field>
+                <field type="Slider: Description" editor_type="VISUAL">slide_description</field>
+                <field type="Slider: Button Text" editor_type="LINE">button_text</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="athemes-addons-dual-buttons">
+            <conditions>
+                <condition key="widgetType">athemes-addons-dual-buttons</condition>
+            </conditions>
+            <fields>
+                <field type="Dual Buttons: First Button Text" editor_type="LINE">text_first</field>
+                <field type="Dual Buttons: Second Button Text" editor_type="LINE">text_second</field>
+                <field type="Dual Buttons: Separator Text" editor_type="LINE">text_separator</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-posts-list">
+            <conditions>
+                <condition key="widgetType">athemes-addons-posts-list</condition>
+            </conditions>
+            <fields>
+                <field type="Posts List: Title" editor_type="LINE">title</field>
+                <field type="Posts List: Read More Text" editor_type="LINE">read_more_text</field>
+                <field type="Posts List: Previous Text" editor_type="LINE">pagination_prev_text</field>
+                <field type="Posts List: Next Text" editor_type="LINE">pagination_next_text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-posts-timeline">
+            <conditions>
+                <condition key="widgetType">athemes-addons-posts-timeline</condition>
+            </conditions>
+            <fields>
+                <field type="Posts Timeline: Title" editor_type="LINE">title</field>
+                <field type="Posts Timeline: Read More Text" editor_type="LINE">read_more_text</field>
+                <field type="Posts Timeline: Previous Text" editor_type="LINE">pagination_prev_text</field>
+                <field type="Posts Timeline: Next Text" editor_type="LINE">pagination_next_text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-posts-carousel">
+            <conditions>
+                <condition key="widgetType">athemes-addons-posts-carousel</condition>
+            </conditions>
+            <fields>
+                <field type="Posts Carousel: Title" editor_type="LINE">title</field>
+                <field type="Posts Carousel: Read More Text" editor_type="LINE">read_more_text</field>
+                <field type="Posts Carousel: Previous Text" editor_type="LINE">pagination_prev_text</field>
+                <field type="Posts Carousel: Next Text" editor_type="LINE">pagination_next_text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-woo-product-grid">
+            <conditions>
+                <condition key="widgetType">athemes-addons-woo-product-grid</condition>
+            </conditions>
+            <fields>
+                <field type="Woo Product Grid: Title" editor_type="LINE">title</field>
+                <field type="Woo Product Grid: All Products Text" editor_type="LINE">show_filter_all_text</field>
+                <field type="Woo Product Grid: Load More Text" editor_type="LINE">load_more_text</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-weforms">
+            <conditions>
+                <condition key="widgetType">athemes-addons-weforms</condition>
+            </conditions>
+            <fields>
+                <field type="WeForms: Form Title" editor_type="LINE">form_title</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-gravity-forms">
+            <conditions>
+                <condition key="widgetType">athemes-addons-gravity-forms</condition>
+            </conditions>
+            <fields>
+                <field type="Gravity Forms: Form Title" editor_type="LINE">form_title</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-wpforms">
+            <conditions>
+                <condition key="widgetType">athemes-addons-wpforms</condition>
+            </conditions>
+            <fields>
+                <field type="WPForms: Form Title" editor_type="LINE">form_title</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-ninja-forms">
+            <conditions>
+                <condition key="widgetType">athemes-addons-ninja-forms</condition>
+            </conditions>
+            <fields>
+                <field type="Ninja Forms: Form Title" editor_type="LINE">form_title</field>
+            </fields>
+        </widget>
+
+        <widget name="athemes-addons-contact-form7">
+            <conditions>
+                <condition key="widgetType">athemes-addons-contact-form7</condition>
+            </conditions>
+            <fields>
+                <field type="Contact Form 7: Form Title" editor_type="LINE">form_title</field>
+            </fields>
+        </widget>
+    </elementor-widgets>
+</wpml-config> 

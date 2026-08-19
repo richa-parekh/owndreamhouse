@@ -1,0 +1,12 @@
+.elementor-add-new-section .elementor-add-aafe-button {
+    background-color: #dae2fe;
+    position: relative;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.elementor-add-new-section .elementor-add-aafe-button svg {
+    width: auto;
+    height: 16px;
+}

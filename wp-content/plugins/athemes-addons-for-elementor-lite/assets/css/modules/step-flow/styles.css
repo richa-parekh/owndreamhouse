@@ -1,0 +1,255 @@
+/* Step Flow Widget Styles */
+
+/* Basic Structure */
+.step-flow-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.step-flow-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step-flow-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.step-flow-item-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Connector Styles */
+.step-flow-connector-line .step-flow-connector {
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Horizontal Layout */
+.step-flow-layout-horizontal .step-flow-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.step-flow-layout-horizontal .step-flow-item {
+    flex: 1;
+}
+
+.step-flow-layout-horizontal .step-flow-connector {
+    height: 2px;
+    flex-grow: 1;
+	margin: 0 30px;
+}
+
+.step-flow-layout-horizontal .step-flow-connector-arrow .step-flow-connector,
+.step-flow-layout-horizontal .step-flow-connector-zigzag .step-flow-connector,
+.step-flow-layout-horizontal .step-flow-connector-wiggly .step-flow-connector {
+    height: auto;
+}
+
+/* Vertical Layout */
+.step-flow-layout-vertical .step-flow-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-flow-layout-vertical .step-flow-item {
+    width: 100%;
+}
+
+.step-flow-layout-vertical .step-flow-connector {
+    width: 2px;
+    height: 30px;
+    margin: 30px 0;
+}
+
+/* Zigzag Layout */
+.step-flow-layout-zigzag .step-flow-container {
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.step-flow-layout-zigzag .step-flow-item {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.step-flow-layout-zigzag .step-flow-item:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.step-flow-layout-zigzag .step-flow-item:nth-child(even) {
+    align-self: flex-end;
+}
+
+.step-flow-layout-zigzag .step-flow-item:nth-child(even) .step-flow-item-inner {
+    align-items: flex-end;
+}
+
+.step-flow-layout-zigzag .step-flow-item:nth-child(odd) .step-flow-item-inner {
+    align-items: flex-start;
+}
+
+.step-flow-layout-zigzag .step-flow-connector {
+    width: 2px;
+    height: 30px;
+    margin: 15px auto;
+    align-self: center;
+}
+
+/* Alignment */
+.step-flow-item[style*="text-align: center"] .step-flow-item-inner,
+.step-flow-item[style*="text-align:center"] .step-flow-item-inner {
+    align-items: center;
+}
+
+.step-flow-item[style*="text-align: left"] .step-flow-item-inner,
+.step-flow-item[style*="text-align:left"] .step-flow-item-inner {
+    align-items: flex-start;
+}
+
+.step-flow-item[style*="text-align: right"] .step-flow-item-inner,
+.step-flow-item[style*="text-align:right"] .step-flow-item-inner {
+    align-items: flex-end;
+}
+
+/* Step Number */
+.step-flow-number {
+	position: absolute;
+	top: -5px;
+	left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Icon Styles */
+.step-flow-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+	background-color: #f7f7f7;
+	padding: 30px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.step-flow-icon,
+.step-flow-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.step-flow-icon i {
+    font-size: 30px;
+}
+
+.step-flow-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.step-flow-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Content Styles */
+.step-flow-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.step-flow-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.step-flow-description {
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+.step-flow-layout-vertical .step-flow-connector-arrow .step-flow-connector,
+.step-flow-layout-vertical .step-flow-connector-zigzag .step-flow-connector,
+.step-flow-layout-vertical .step-flow-connector-wiggly .step-flow-connector {
+	height: 50px !important;
+	width: auto !important;
+}
+.step-flow-layout-vertical .step-flow-connector-arrow .step-flow-connector svg,
+.step-flow-layout-vertical .step-flow-connector-zigzag .step-flow-connector svg,
+.step-flow-layout-vertical .step-flow-connector-wiggly .step-flow-connector svg {
+	width: 50px;
+	transform: rotate(90deg);
+	transform-origin: center center;
+}
+
+/* Responsive Behavior */
+@media (max-width: 767px) {
+    .step-flow-layout-horizontal .step-flow-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .step-flow-layout-horizontal .step-flow-item {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .step-flow-layout-horizontal .step-flow-connector {
+        width: 2px;
+        height: 30px !important;
+        margin: 30px 0;
+    }
+    
+    .step-flow-layout-zigzag .step-flow-item:nth-child(odd),
+    .step-flow-layout-zigzag .step-flow-item:nth-child(even) {
+        align-self: auto;
+        width: 100%;
+    }
+    
+    .step-flow-layout-zigzag .step-flow-item:nth-child(odd) .step-flow-item-inner,
+    .step-flow-layout-zigzag .step-flow-item:nth-child(even) .step-flow-item-inner {
+        align-items: center;
+    }
+
+    .step-flow-layout-horizontal .step-flow-connector-arrow .step-flow-connector,
+    .step-flow-layout-horizontal .step-flow-connector-zigzag .step-flow-connector,
+    .step-flow-layout-horizontal .step-flow-connector-wiggly .step-flow-connector {
+        height: 50px !important;
+        width: auto !important;
+    }
+    
+    .step-flow-layout-horizontal .step-flow-connector-arrow .step-flow-connector svg,
+    .step-flow-layout-horizontal .step-flow-connector-zigzag .step-flow-connector svg,
+    .step-flow-layout-horizontal .step-flow-connector-wiggly .step-flow-connector svg {
+        width: 50px;
+        transform: rotate(90deg);
+        transform-origin: center center;
+    }
+}

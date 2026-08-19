@@ -1,0 +1,192 @@
+/* Table of Contents Widget Styles */
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+
+/* Enable smooth scrolling when TOC widget is present */
+html {
+    scroll-behavior: smooth;
+}
+
+.athemes-addons-table-of-contents {
+    position: relative;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   HEADER STYLES
+   ========================================================================== */
+
+.athemes-addons-table-of-contents .toc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Only add padding and border when TOC is expanded */
+.athemes-addons-table-of-contents:not(.toc-collapsed) .toc-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.athemes-addons-table-of-contents .toc-title {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Toggle Button Styles */
+.athemes-addons-table-of-contents .toc-toggle-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* SVG Icon Styles */
+.athemes-addons-table-of-contents .toc-toggle-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Toggle Icon States */
+.athemes-addons-table-of-contents .toc-toggle-icon-expand {
+    display: none;
+}
+
+.athemes-addons-table-of-contents.toc-collapsed .toc-toggle-icon-collapse {
+    display: none;
+}
+
+.athemes-addons-table-of-contents.toc-collapsed .toc-toggle-icon-expand {
+    display: flex;
+}
+
+/* ==========================================================================
+   CONTENT AREA
+   ========================================================================== */
+
+.athemes-addons-table-of-contents .toc-content {
+    overflow: hidden;
+}
+
+.athemes-addons-table-of-contents.toc-collapsed .toc-content {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+}
+
+.athemes-addons-table-of-contents:not(.toc-collapsed) .toc-content {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+/* ==========================================================================
+   LIST STYLES
+   ========================================================================== */
+
+.athemes-addons-table-of-contents .toc-list {
+    margin: 0;
+    padding: 0;
+}
+
+.athemes-addons-table-of-contents .toc-list ul {
+    list-style: none;
+    margin: 8px 0 0 0;
+    padding: 0 0 0 20px;
+}
+
+.athemes-addons-table-of-contents .toc-list li {
+    list-style: none;
+    margin: 0 0 8px 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.athemes-addons-table-of-contents .toc-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* List Item Links */
+.athemes-addons-table-of-contents .toc-list a {
+    color: var(--sydney-text-color, #333);
+    text-decoration: none;
+    padding: 4px 0;
+}
+
+/* Active/Current Link */
+.athemes-addons-table-of-contents .toc-list a.toc-active {
+    color: #007cba;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   LIST MARKERS (Numbers/Icons)
+   ========================================================================== */
+
+.athemes-addons-table-of-contents .toc-marker {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Numbers Style */
+.athemes-addons-table-of-contents.toc-style-numbers .toc-marker {
+    font-weight: 500;
+}
+
+/* Custom Icon Style */
+.athemes-addons-table-of-contents.toc-style-custom .toc-marker svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   NESTED LISTS
+   ========================================================================== */
+
+.athemes-addons-table-of-contents .toc-list ul li {
+    margin-bottom: 12px;
+}
+
+.athemes-addons-table-of-contents .toc-list ul ul {
+    padding-left: 16px;
+}
+
+.athemes-addons-table-of-contents .toc-list ul ul li {
+    margin-bottom: 6px;
+}
+
+/* ==========================================================================
+   RESPONSIVE COLLAPSIBLE BEHAVIOR
+   ========================================================================== */
+
+/* Show toggle button for collapsible TOCs */
+.athemes-addons-table-of-contents.toc-collapsible .toc-toggle-button {
+    display: inline-flex;
+}
+
+/* Hide toggle button by default for non-collapsible TOCs */
+.athemes-addons-table-of-contents:not(.toc-collapsible) .toc-toggle-button {
+    display: none;
+}
+
+/* Tablet Breakpoint - Auto collapse on tablet and below */
+@media (max-width: 1024px) {
+    .athemes-addons-table-of-contents.toc-collapsible-tablet:not(.toc-expanded) .toc-content {
+        display: none;
+    }
+}
+
+/* Desktop - Always show toggle button */
+.athemes-addons-table-of-contents.toc-collapsible-desktop .toc-toggle-button {
+    display: inline-flex;
+}

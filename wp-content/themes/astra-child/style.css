@@ -1,16 +1,31 @@
 /*
-Theme Name: Astra Child
-Description: Astra Child Theme
-Author: Richa
-Author URI: http://example.com
-Template: astra
-Version: 1.0.0
+ Theme Name: Astra Child
+ Template: astra
+ Author: Richa
+ Description: A child theme for Astra
+ Version: 1.0
 */
-/* Add your custom styles here */
-
-div#n2-ss-3 .nextend-arrow{
-    margin-bottom: 150px !important;
-    margin-right: -122px !important;
+/* Template name must match the exact name of the parent theme’s folder, or the child theme won’t work! */
+/* div#n2-ss-3 .nextend-arrow {
     background-color: #CEDD55;
-    padding: 10px 15px;
+    padding: 5px 10px;
+} */
+div#n2-ss-3 .nextend-arrow-next {
+    margin-bottom: 140px;
+    margin-right: -119px;
+}
+div#n2-ss-3 .nextend-arrow-previous {
+    margin-bottom: 80px;
+    margin-right: 107px;
+}
+
+.blockquote {
+    margin: 0px!important;
+    border-left: 4px solid #ec3323;
+    padding-left: 30px;
+    margin-right: 20px;
+}
+
+.blockquote p {
+    margin-bottom: 0;
 }
